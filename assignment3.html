@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Minkyu Kim Assignment 3">
+  <meta name="author" content="Minkyu Kim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet preset" href="assets/css/style.css">
+  <title>Assignment 3</title>
+</head>
+
+<body>
+  <main>
+      <!--This section is for nav bar-->
+    <nav class="navigation">
+      <div class="container">
+        <p class="nav">Application Form</p>
+        <div class="overlay">
+          <a href="#apply" class="text" onclick="document.getElementById('sound1').play();">Quest Longboard</a>
+        </div>
+      </div>
+    <div class="container">
+      <p class="nav">HTML5 Video/Hobbies</p>
+        <div class="overlay">
+          <a href="#video" class="text" onclick="document.getElementById('sound1').play();">Library of Enchanted Books</a>
+        </div>
+      </div>
+    <div class="container">
+      <p class="nav">HTML 5 Form elements</p>
+        <div class="overlay">
+          <a href="#form" class="text" onclick="document.getElementById('sound1').play();">Guild Signup</a>
+        </div>
+      </div>
+    <div class="container">
+      <p class="nav">5 Minutes Tutorial</p>
+        <div class="overlay">
+          <a href="#minute" class="text" onclick="document.getElementById('sound1').play();">Training session</a>
+        </div>
+      </div>
+    <div class="container">
+      <p class="nav">Image Mapping</p>
+        <div class="overlay">
+          <a href="#map" class="text" onclick="document.getElementById('sound1').play();">Cartography</a>
+        </div>
+      </div> 
+    <div class="container">
+      <p class="nav">To top of the page</p>
+        <div class="overlay">
+          <a href="#" class="text" onclick="document.getElementById('sound1').play();">Warp to celestial plains</a>
+        </div>
+      </div> 
+    </nav>
+<section id="headers">
+<header>
+  <div class="backgrounds">
+    <br>
+    <br>
+  <div class="ugg">
+    <h1 class="welcome" >Ah, hello adventurer!</h1>
+      <h2 class="welcomein">Welcome to the town of Honeywood.</h2>
+        <h3 id="welcomes">In this realm of wonderous fantasy land, you will be able to acquire the knowledge of How to create website based forms and what to include in such form. To witness my video, please click on the button below.</h3>
+    <form action="#minute" method="get">
+      <br>
+          <!--this is necessary style for it to work properly-->
+        <button id="videos" style="background: #9E9D5C url(assets/images/sword.png); background-size: contain;" onclick="document.getElementById('sound1').play();">
+          <span>Click here for my video!</span>
+        </button>
+    </form>
+  </div>
+</div>
+</header>
+</section>
+<section id="video">
+    <!--hobby section-->
+  <h2 id="html5video">HTML5 Videos - My Hobbies</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <video class="anotherone" controls>
+          <source src="assets/videos/simpsons.mp4" type="video/mp4">
+        </video>
+          <p class="titlevideo">Video Editing</p>
+          <p class="descriptionVideo">One of my hobbies are to edit videos I personally record, or find online. For example, I play a video game and record them. Using that footage, I go ahead and edit using my editing software.</p>
+        </div>
+        <div class="grid-item">
+          <video class="anotherone" controls>
+            <source src="assets/videos/warthunder.mp4" type="video/mp4">
+          </video>
+            <p class="titlevideo">Gaming</p>
+            <p class="descriptionVideo">I often enjoy gaming for my leasurely activities. It certainly does relieve some stress I get from day to day life. However, I mostly play them to acquire scenaries and pictures I can use to create wallpapers.</p>
+        </div>
+        <div class="grid-item">
+          <video class="anotherone" controls>
+            <source src="assets/videos/airport.mp4" type="video/mp4">
+          </video>
+            <p class="titlevideo">Travelling</p>
+            <p class="descriptionVideo">Travelling was one of my hobbies before the Coronavirus outbreak happened. I am a member of Toronto Pearson Welcome Team, however the program is currently suspended. Though, I still wish to travel once the whole outbreak is over.</p>
+      </div>
+    </div>
+</section>
+
+<section id="form">
+  <h2 id="scroll">HTML5 Form Elements</h2>
+    <form class="herewego">
+      <table class="testing">
+        <tr>
+          <th><label for="title">Title: </label></th>
+          <td><input type="text" id="title" name="title"pattern="[A-z0-9À-ž\s]{1,}" placeholder="Midterm" required></td>
+        </tr>
+        <tr>
+          <th><label for="name">Name: </label></th>
+          <td><input type="text" id="name" name="name" pattern="[A-zÀ-ž\s]{1,}" placeholder="John Doe" required></td>
+        </tr>
+        <tr>
+          <th><label for="phone">Phone number: </label></th>
+          <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">(Optional)</td>
+        </tr>
+        <tr>
+          <th><label for="website">Your Website: </label></th>
+          <td><input type="url" id="website" name="website" placeholder="https://www.youtube.com/watch?v=fC7oUOUEEi4" >(Optional)</td>
+        </tr>
+        <tr>
+          <th><label for="quantity">Number of items to order: </label></th>
+          <td><input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="1~10" required>(1~10)</td>
+        </tr>
+        <tr>
+          <th><label for="length">Length: </label></th>
+          <td><input type="range" id="length" name="length" min="1" max="10" value="1">max 1m (in 10cm increments)</td>
+        </tr>
+        <tr>
+          <th><label for="deliveryDate">Delivery date: </label></th>
+          <td><input type="date" id="deliveryDate" name="deliveryDate" min="2020-12-16" required>(Minimum 16 December 2020)</td>
+        </tr>
+        <tr> 
+          <th><label for="times">Time of Delivery: </label></th>
+          <td><input type="number" id="times" name="times" min="0" max="23" required><strong> :</strong>
+              <input type="number" id="times2" name="times2" min="0" max="30" step="30"> <br>(30 min increments)
+        </td>
+        </tr>
+        <tr>
+          <th><label for="colour">Colour of the item: </label></th>
+          <td><input type="color" id="colour" name="colour" value="#ff0000"></td>
+        </tr>
+        <tr>
+            <!--necessary style in html-->
+          <th><button id="reset" type="reset" style="background: url(assets/images/sword.png); background-size: contain;">Reset</button></th>
+          <td><input type="submit" id="submitButton" name="submitButton" style="background: url(assets/images/sword2.png); background-size: contain;"></td>
+        </tr>
+      </table>
+    </form>
+</section>
+
+<section id="minute">
+  <div id="forvideo">
+    <h3 class="mapping">Here's my instructional video on how to create a form in HTML</h3>
+      <video class="customvideo" width="640" height="360" controls>
+        <source src="assets/videos/myvideo.mp4" type="video/mp4">
+      </video>
+  </div>
+</section>
+
+<section id="map">
+  <h3 class="mapping">Click on available modules to view parts</h3>
+    <img src="assets/images/sherman2.png" usemap="#map" alt="sherman">
+      <map name="map">
+        <area target="_blank" alt="75mm gun" title="75mm gun" href="assets/images/shermangun.png" coords="34,129,276,152" shape="rect">
+        <area target="_blank" alt="engine" title="Engine" href="assets/images/engine.jpg" coords="707,242,620,251,618,356,742,358,754,243" shape="poly">
+        <area target="_blank" alt="exhaust" title="Exhaust" href="assets/images/exhaust.jpg" coords="845,238,799,225,771,227,753,241,742,231,762,209,799,203,842,215" shape="poly">
+        <area target="_blank" alt="75mm shells" title="75mm shells" href="assets/images/shell.jpg" coords="482,184,534,182,537,217,537,266,478,274,485,223,487,190" shape="poly">
+        <area target="_blank" alt="gunner seat" title="Gunner Seat" href="assets/images/gunnerseat.jpg" coords="434,250,469,248,483,182,461,189,461,218,428,227" shape="poly">
+        <area target="_blank" alt="breach" title="Breach" href="assets/images/breach.png" coords="381,115,542,176" shape="rect">
+        <area target="_blank" alt="turret hatch" title="Turret Hatch" href="assets/images/hatch.jpg" coords="440,59,568,68" shape="rect">
+        <area target="_blank" alt="transmssion" title="Transmssion" href="assets/images/transmission.jpg" coords="255,309,174,311,182,377,257,387" shape="poly">
+        <area target="_blank" alt="driver seat, Machine gunner seat" title="Driver seat, Machine gunner seat" href="assets/images/driver.jpg" coords="318,288,312,339,261,345,260,330,299,323,302,285" shape="poly">
+        <area target="_blank" alt="main drive sprocket" title="Main drive Sprocket" href="assets/images/sprocket.jpg" coords="91,361,51" shape="circle">
+        <area target="_blank" alt="rear idler wheel" title="Rear Idler wheel" href="assets/images/idler.jpg" coords="807,354,47" shape="circle">
+        <area target="_blank" alt="generator" title="Generator" href="assets/images/generator.png" coords="612,317,612,379,581,380,570,373,568,359,569,334,575,319" shape="poly">
+        <area target="_blank" alt="driver's hatch" title="Driver's Hatch" href="assets/images/hatchD.jpg" coords="221,210,251,189,293,188,301,180,313,179,317,172,220,189" shape="poly">
+        <area target="_blank" alt="suspension bogie" title="Suspension Bogie" href="assets/images/suspension.jpg" coords="156,435,218,418,230,418,274,431,288,427,290,414,276,410,242,405,189,405,166,415,151,417" shape="poly">
+        <area target="_blank" alt="lifting ring" title="Lifting Ring" href="assets/images/lift.jpg" coords="371,66,367,79,368,88,382,78,379,67" shape="poly">
+        <area target="_blank" alt=".30 caliber browning m1919a4" title=".30 caliber Browning M1919A4" href="assets/images/browning.jpg" coords="102,251,152,250,161,236,192,232,208,235,213,245,229,244,231,253,241,252,247,267,237,271,228,265,150,268,144,261,99,262,100,255" shape="poly">
+        <area target="_blank" alt="radio" title="Radio" href="assets/images/radio.jpg" coords="562,112,607,158" shape="rect">
+        <area target="_blank" alt="air cleaner" title="Air Cleaner" href="assets/images/filter.jpg" coords="636,193,614,188,612,230,626,235,635,228" shape="poly">
+      </map>
+</section>
+</div>
+<section id="apply">
+
+    <div class="application">
+      <h2 class="apform">Application Form</h2>
+        <p class="appform">In this section, you will submit an application form.</p>
+                                <!--necessary style in html-->
+          <button id="signupbutton" onclick="document.getElementById('forms').style.display='block'" style="width:auto;">Click here to apply</button>
+    </div>
+  <div id="forms" class="signup">
+                                <!--again, necessary style in html-->
+    <span onclick="document.getElementById('forms').style.display='none'" class="close" title="signup section">&times;</span>
+      <form class="content" method="post">
+        <div class="container">
+          <fieldset>
+            <legend id="whatever">Application Form</legend>
+            <p>Please fill in this form to apply.</p>
+          <hr>
+          <div class="inner2">
+    <table>
+      <tr>
+        <th><label for="fullName" class="description">Full Name</label></th>
+        <td><input id="fullName" name="fullName" type="text" maxlength="255" value="" placeholder="First and Last name" pattern="[A-zÀ-ž\s]{1,}" required/></td>
+      </tr>
+        <br>
+      <tr>
+        <th><label for="email" class="description">Email</label></th>
+        <td><input id="email" name="email" type="email" maxlength="255" value="" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></td>
+      </tr>
+      <tr>
+        <th><label class="description">Gender (optional)</label></th>
+        <td><input id="male" name="gender" type="radio" value="male"/>Male
+          <input id="female" name="gender" type="radio" value="female"/>Female
+          <input id="other" name="gender" type="radio" value="other gender"/>Other
+        </td>
+      </tr>
+      <tr>
+        <th><label class="description">Nationality (optional)</label></th>
+        <td>
+          <select id="nationality" name="nationality"> 
+            <option value="" selected="selected">-select-</option>
+            <option value="1">British</option>
+            <option value="2">Senegalese</option>
+            <option value="3">Irish</option>
+            <option value="4">Welsh</option>
+            <option value="5">Danish</option>
+            <option value="6">Finnish</option>
+            <option value="7">Norwegian</option>
+            <option value="8">Swedish</option>
+            <option value="9">Swiss</option>
+            <option value="10">Estonian</option>
+            <option value="11">Latvian</option>
+            <option value="12">Lithuanian</option>
+            <option value="13">Austrian</option>
+            <option value="14">Belgian</option>
+            <option value="15">French</option>
+            <option value="16">German</option>
+            <option value="17">Italian</option>
+            <option value="18">Dutch</option>
+            <option value="19">American</option>
+            <option value="20">Canadian</option>
+            <option value="21">Mexican</option>
+            <option value="22">Ukrainian</option>
+            <option value="23">Russian</option>
+            <option value="24">Belarusian</option>
+            <option value="25">Polish</option>
+            <option value="26">Czech</option>
+            <option value="27">Slovak/Slovakian</option>
+            <option value="28">Hungarian</option>
+            <option value="29">Romanian</option>
+            <option value="30">Bulgarian</option>
+            <option value="31">Greek</option>
+            <option value="32">Spanish</option>
+            <option value="33">Brazilian</option>
+            <option value="34">Portuguese</option>
+            <option value="35">Australian</option>
+            <option value="36">New Zealander</option>
+            <option value="37">Georgian</option>
+            <option value="38">Israeli</option>
+            <option value="39">Salvadorian</option>
+            <option value="40">Turkish</option>
+            <option value="41">Chinese</option>
+            <option value="42">Korean</option>
+            <option value="43">Japanese</option>
+            <option value="44">Indian</option>
+            <option value="45">South African</option>
+            <option value="46">Afghan</option>
+            <option value="47">Albanian</option>
+            <option value="48">Algerian</option>
+            <option value="49">Romanian</option>
+            <option value="50">Bangladeshi</option>
+            <option value="51">Bolivian</option>
+            <option value="52">Batswana</option>
+            <option value="53">Cambodian</option>
+            <option value="54">Cameroonian</option>
+            <option value="55">Chilean</option>
+            <option value="56">Colombian</option>
+            <option value="57">Costa Rican</option>
+            <option value="58">Croatian</option>
+            <option value="59">Cuban</option>
+            <option value="60">Danish</option>
+            <option value="61">Dominican</option>
+            <option value="62">Ecuadorian</option>
+            <option value="63">Ethiopian</option>
+            <option value="64">Egyptian</option>
+            <option value="65">Fijian</option>
+            <option value="66">Ghanaian</option>
+            <option value="67">Guatemalan</option>
+            <option value="68">Haitian</option>
+            <option value="69">Honduran</option>
+            <option value="70">Icelandic</option>
+            <option value="71">Indonesian</option>
+            <option value="72">Iranian</option>
+            <option value="73">Iraqi</option>
+            <option value="74">Jamaican</option>
+            <option value="75">Jordanian</option>
+            <option value="76">Kenyan</option>
+            <option value="77">Lao</option>
+            <option value="78">Kuwaiti</option>
+            <option value="79">Lebanese</option>
+            <option value="80">Libyan</option>
+            <option value="81">Malagasy</option>
+            <option value="82">Malaysian</option>
+            <option value="83">Malian</option>
+            <option value="84">Maltese</option>
+            <option value="85">Mongolian</option>
+            <option value="86">Moroccan</option>
+            <option value="87">Mozambican</option>
+            <option value="88">Namibian</option>
+            <option value="89">Nepalese</option>
+            <option value="90">New Zealander</option>
+            <option value="91">Nicaraguan</option>
+            <option value="92">Nigerian</option>
+            <option value="93">Pakistani</option>
+            <option value="94">Panamanian</option>
+            <option value="95">Paraguayan</option>
+            <option value="96">Peruvian</option>
+            <option value="97">Philippine</option>
+            <option value="98">Romanian</option>
+            <option value="99">Saudi</option>
+            <option value="100">Senegalese</option>
+            <option value="101">Serbian</option>
+            <option value="102">Singaporean</option>
+            <option value="103">Sri Lankan</option>
+            <option value="104">Sudanese</option>
+            <option value="105">Syrian</option>
+            <option value="106">Taiwanese</option>
+            <option value="107">Tajikistani</option>
+            <option value="108">Thai</option>
+            <option value="109">Tongan</option>
+            <option value="110">Tunisian</option>
+            <option value="111">Emirati</option>
+            <option value="112">Uruguayan</option>
+            <option value="113">Venezuelan</option>
+            <option value="114">Vietnamese</option>
+            <option value="115">Zambian</option>
+            <option value="116">Zimbabwean</option>
+            <option value="117">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th><label class="description">Skills (optional)</label></th>
+        <td>
+          <textarea id="skills" name="skills" rows="2" cols="50" placeholder="html, C#, Javascript etc"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th><label class="description">Position Applying for</label></th>
+        <td>
+          <input id="Programmer" name="position"type="radio" value="programmer" required/>Programmer
+          <input id="IT" name="position"type="radio" value="IT"/>IT Technician
+          <input id="SoftwareEngineer" name=" position"type="radio" value="SE"/>Software Engineer
+        </td>
+      </tr>
+      <tr>
+        <th><label class="description" for="paragraph">Paste your Resume (optional)</label></th>
+        <td><textarea id="paragraph" name="paragraph" placeholder="resume here" rows="2" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <th><label class="description" for="file">Upload a File(Cover letter and/or References) </label></th>
+        <td><input id="file" name="file" type="file" accept=".doc, .docx, .pdf" required/></td>
+      </tr>
+      <tr>
+        <td><p><input type="checkbox" name="emailme" value="emailme"/>Notify me via Email (optional)</p></td>
+        <td><p><input type="radio" name="terms" required>I agree to Terms & Conditions</p></td>
+      </tr>
+      <tr>
+        <th class="clearfix"><button type="reset" name="reset" value="Reset" class="reset">Reset</button></th>
+        <td><input type="submit" class="submit" value="submit"></td>
+      </tr>
+    </table>
+     </div>
+      </div>
+          </fieldset>
+        </div>
+      </form>
+  </div>
+</section>
+  <footer class="testings">
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+      <audio id="sound1" src="assets/music/eugene_pathetic_cry.mp3" preload="auto"></audio>
+      <audio id="music" autoplay loop controls>
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+      </audio>
+    <script>
+      //Script to move the validator and adjust its content to make it fit properly on the page
+    var annoying_gblearn_validator = document.getElementById("gblearn_message_holder");
+      //Remove the br because it adds too much space
+    annoying_gblearn_validator.getElementsByTagName("br").item(0).remove();
+      //Now remove the element entirely
+    annoying_gblearn_validator.remove();
+      //And put it where it's supposed to go
+    document.getElementsByTagName("footer").item(0).append(annoying_gblearn_validator);
+    </script>
+  </footer>
+</main>
+</body>
+</html>
